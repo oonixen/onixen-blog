@@ -1,0 +1,9 @@
+-iconArr = [{name:'JS', img:'nodejs-icon.svg'}, {name:'TypeScript', img:'typescriptlang-icon.svg'},
+-{name:'ReactJS', img:'reactjs-icon.svg'}, {name:'GraphQL', img:'graphql-icon.svg'},
+-{name:'Webpack', img:'js_webpack-icon.svg'}, {name:'Pug', img:'pugjs-icon.svg'},
+-{name:'Sass', img:'sass-lang-icon.svg'}]
+
+h2 Technology stack
+div(class='main__iconDiv')
+    each icon in iconArr
+        img(src=`/img/${icon.img}` class="main__icon" title=icon.name)

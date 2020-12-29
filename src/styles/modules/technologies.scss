@@ -1,0 +1,17 @@
+@import "src/styles/config";
+
+.main__iconDiv {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.main__icon {
+    margin: 5px 15px;
+}
+
+@media (max-width: $maxWidth--tablet) {
+    .main__icon {
+        width: 50px;
+    }
+}
