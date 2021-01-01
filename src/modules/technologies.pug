@@ -1,9 +1,12 @@
--iconArr = [{name:'JS', img:'nodejs-icon.svg'}, {name:'TypeScript', img:'typescriptlang-icon.svg'},
--{name:'ReactJS', img:'reactjs-icon.svg'}, {name:'GraphQL', img:'graphql-icon.svg'},
+-iconArr = [{name:'JavaScript', img:'nodejs-icon.svg'}, {name:'TypeScript', img:'typescriptlang-icon.svg'},
+-{name:'React', img:'reactjs-icon.svg'}, {name:'GraphQL', img:'graphql-icon.svg'},
+-{name: 'Redux', img: 'redux.svg'}, {name:'Jest', img: 'jestjsio-icon.svg'},
 -{name:'Webpack', img:'js_webpack-icon.svg'}, {name:'Pug', img:'pugjs-icon.svg'},
 -{name:'Sass', img:'sass-lang-icon.svg'}]
 
-h2 Technology stack
-div(class='main__iconDiv')
-    each icon in iconArr
-        img(src=`/img/${icon.img}` class="main__icon" title=icon.name)
+section
+    h2 Technology stack
+    ul(class='main__iconDiv')
+        each icon in iconArr
+            li
+                img(src=`/img/${icon.img}` class="main__icon" title=icon.name)

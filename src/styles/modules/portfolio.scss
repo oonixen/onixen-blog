@@ -1,0 +1,47 @@
+.Portfolio__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 980px;
+    margin: 0 auto 1500px;
+}
+
+.Portfolio__secondaryContainer {
+    width: 200px;
+}
+
+.Portfolio__navigation {
+    position: sticky;
+    top: 130px;
+
+    & ol li:not(:first-child) .Portfolio__link {
+        margin-top: 24px;
+    }
+}
+
+.Portfolio__link {
+    transition: color 200ms;
+    display: block;
+
+    &:hover {
+        color: $color--3;
+    }
+}
+
+.Portfolio__link--active {
+    color: $color--3;
+}
+
+.Portfolio__mainContainer {
+    width: 720px;
+
+    & section:not(:first-child) {
+        margin-top: 10px;
+    }
+}
+
+.Portfolio__project {
+    height: 800px;
+    background-color: $color--2;
+    border-radius: 10px;
+}

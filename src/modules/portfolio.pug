@@ -1,4 +1,15 @@
 - portfolioArray = [{name: "Polyana Delivery", desc: "Delivery site built with React.js"},
-- {name: "Weather App", desc: "Pet project built with Next.js"}]
+- {name: "Weather App (pet project)", desc: "Pet project built with Next.js"}]
 
-h2 Portfolio
+section
+    h2 Portfolio
+    div(class='Portfolio__container')
+        div(class='Portfolio__secondaryContainer')
+            nav(class='Portfolio__navigation')
+                ol
+                    each port in portfolioArray
+                        li
+                            a(class='Portfolio__link' href=`/#${port.name}`)= port.name
+        div(class='Portfolio__mainContainer')
+            each port in portfolioArray
+                section(class='Portfolio__project' id=`${port.name}`)
