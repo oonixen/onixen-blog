@@ -1,5 +1,8 @@
-- portfolioArray = [{name: "Polyana Delivery", desc: "Delivery site built with React.js"},
-- {name: "Weather App (pet project)", desc: "Pet project built with Next.js"}]
+- portfolioArray = [{name: "Polyana Delivery", desc: "Delivery app for OOO Polyana", img:'project1img.png', tags:[
+- 'react', 'redux', 'scss']},
+- {name: "Weather App (pet project)",
+- desc: "6 days weather forecast app. Find out the weather of the capitals of the world", img:'project2img.png', tags:[
+- 'next.js', 'typescript', 'redux', 'scss']}]
 
 section
     h2 Portfolio
@@ -12,4 +15,13 @@ section
                             a(class='Portfolio__link' href=`/#${port.name}`)= port.name
         div(class='Portfolio__mainContainer')
             each port in portfolioArray
-                section(class='Portfolio__project' id=`${port.name}`)
+                    section(class='Portfolio__project' id=`${port.name}`)
+                        a
+                            div(class='Portfolio__imgSection')
+                                img(src=`/img/${port.img}` class='Portfolio__img')
+                            div(class='Portfolio__descContainer')
+                                h3= port.name
+                                p= port.desc
+                                p(class='Portfolio__tagSection')
+                                    each tag in port.tags
+                                        span(class='Portfolio__tag')= tag

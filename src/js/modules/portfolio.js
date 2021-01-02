@@ -14,6 +14,7 @@ const portfolioSectionArray = Array.from(document.getElementsByClassName(portfol
 
 for (let item of linkArray) item.addEventListener('click', clickOnLink)
 document.addEventListener('scroll', onScroll)
+document.addEventListener('readystatechange', onScroll)
 
 function clickOnLink (e) {
 
@@ -32,7 +33,7 @@ function clickOnLink (e) {
 
 function onScroll () {
 
-    const windowTopHeight = window.pageYOffset + 100
+    const windowTopHeight = window.pageYOffset + 200
 
     for (let i = 0; i < portfolioSectionArray.length; i++) {
 
