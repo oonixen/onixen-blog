@@ -11,7 +11,7 @@ body {
     scroll-behavior: smooth;
 }
 body {
-    padding: 16px;
+    padding: $padding--1;
 }
 button {
     cursor: pointer;
@@ -27,6 +27,9 @@ a {
 * {
     box-sizing: border-box;
 }
+h1 {
+    font-size: 50px;
+}
 h2 {
     text-align: center;
     font-size: 40px;
@@ -38,4 +41,18 @@ h3 {
 ul, ol {
     padding: 0;
     list-style-type: none;
+}
+
+.ContentSection {
+    margin: $padding--3 0;
+}
+
+@media (max-width: $maxWidth--phone) {
+    body {
+        padding: $padding--2;
+    }
+
+    .ContentSection {
+        margin: 0 0;
+    }
 }

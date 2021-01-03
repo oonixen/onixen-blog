@@ -1,0 +1,53 @@
+@import "src/styles/config";
+
+.Header__section {
+    text-shadow: $color--3 0 0 7px;
+    text-align: center;
+    color: $color--4;
+    width: 100%;
+    height: fit-content;
+    border-radius: $borderRadius--1;
+    background-color: $color--2;
+    padding: $padding--1;
+    overflow: hidden;
+}
+
+.Header__h1 {
+    margin-top: 0;
+}
+
+@function box-shadow($stars) {
+    $bxshadow: ();
+    @for $i from 1 to $stars {
+        $bxshadow: append($bxshadow, (random(2000) + 0px) (random(2000) + 0px) #fff, comma);
+    }
+    @return unquote($bxshadow);
+}
+
+$bxshadow-large: box-shadow(300);
+
+.stars.large {
+    height: 3px;
+    width: 3px;
+    background: transparent;
+    box-shadow: $bxshadow-large;
+    animation: blink-large 3s infinite;
+}
+
+@keyframes blink-large {
+    0% {
+        box-shadow: $bxshadow-large;
+    }
+    70% {
+        $colors: '#fff', 'transparent';
+        $stars: $bxshadow-large;
+        @for $i from 1 to length($stars) {
+            $star: set-nth(nth($stars, $i), 3, unquote(nth($colors, random(length($colors)))));
+            $stars: set-nth($stars, $i, $star);
+        }
+        box-shadow: $stars;
+    }
+    100% {
+        box-shadow: $bxshadow-large;
+    }
+}

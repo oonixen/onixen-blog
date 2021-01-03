@@ -33,7 +33,7 @@ function clickOnLink (e) {
 
 function onScroll () {
 
-    const windowTopHeight = window.pageYOffset + 200
+    const windowTopHeight = window.pageYOffset + 160
 
     for (let i = 0; i < portfolioSectionArray.length; i++) {
 
