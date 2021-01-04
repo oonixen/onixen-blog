@@ -65,7 +65,7 @@
 }
 
 .Portfolio__img {
-    transition: all .3s;
+    transition: all .3s ease-in-out;
     object-fit: cover;
     object-position: top;
     @include imgMixin();

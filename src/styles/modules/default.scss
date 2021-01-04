@@ -10,9 +10,6 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     scroll-behavior: smooth;
 }
-body {
-    padding: $padding--1;
-}
 button {
     cursor: pointer;
     background-color: rgba(0,0,0,0);
@@ -47,12 +44,17 @@ ul, ol {
     margin: $padding--3 0;
 }
 
+.ContentPadding {
+    padding: 0 $padding--1;
+}
+
 @media (max-width: $maxWidth--phone) {
-    body {
-        padding: $padding--2;
+
+    .ContentPadding {
+        padding: 0 $padding--2;
     }
 
     .ContentSection {
-        margin: 0 0;
+        margin: $padding--2 0;
     }
 }

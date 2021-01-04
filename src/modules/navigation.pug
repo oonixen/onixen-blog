@@ -1,0 +1,7 @@
+- navigationList = ['Technology stack', 'Portfolio', 'Contacts']
+
+nav(class="Navigation__section")
+    ol(class='Navigation__ol')
+        each navigation in navigationList
+            li
+                a(href=`/#${navigation}`)= navigation

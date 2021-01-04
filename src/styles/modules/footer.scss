@@ -1,0 +1,30 @@
+@import "src/styles/config";
+
+.Footer__section {
+    width: 100%;
+    height: fit-content;
+    color: $color--4;
+    background-color: $color--2;
+    margin-bottom: 0;
+    padding: $padding--2 $padding--1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.Footer__block {
+    margin-left: $padding--2;
+    display: flex;
+    align-items: center;
+}
+
+.Footer__img {
+    padding-right: 5px;
+    height: 20px;
+}
+
+@media (max-width: $maxWidth--phone) {
+    .Footer__section {
+        padding: $padding--2 $padding--2;
+    }
+}

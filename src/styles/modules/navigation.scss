@@ -1,0 +1,37 @@
+@import "src/styles/config";
+
+.Navigation__section {
+    width: 100%;
+    padding: $padding--2 $padding--1;
+
+    .Navigation__ol {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        li {
+            text-align: center;
+            margin-left: 5px;
+
+            a {
+                padding: 5px;
+                transition: color 0.3s;
+            }
+
+            a:hover {
+                color: $color--3;
+                border-bottom: solid 2px $color--3;
+            }
+        }
+    }
+}
+
+@media (max-width: $maxWidth--phone) {
+    .Navigation__section {
+        padding: $padding--2 $padding--2;
+    }
+
+    .Navigation__ol {
+        justify-content: center;
+    }
+}
