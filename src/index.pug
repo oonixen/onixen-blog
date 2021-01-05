@@ -1,10 +1,25 @@
+- title= 'onixen blog'
+- description= "Hey, i'm Nick. I love to create web apps"
+
 doctype html
 html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title= title
+        meta(name='description' content=`${description}`)
+        meta(property='og:site_name' content='onixen')
+        meta(property='og:type' content='blog')
+        meta(property='og:title' content=`${title}`)
+        meta(property='og:description' content=`${description}`)
+        meta(property='og:image' content='/img/og-image.png')
+        meta(property='og:image:width' content='572')
+        meta(property='og:image:height' content='286')
+        link(rel='icon' type='image/png' sizes='32x32' href='/img/onixenlogo-32.png')
+        link(rel='icon' type='image/png' sizes='16x16' href='/img/onixenlogo-16.png')
+        link(rel='apple-touch-icon' sizes='180*180' href='/img/onixenlogo-180.png')
+        link(rel='android-touch-icon' sizes='180*180' href='/img/onixenlogo-180.png')
 
-        title onixen
     body
         include modules/navigation
         include modules/header
