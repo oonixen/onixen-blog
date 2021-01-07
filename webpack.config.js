@@ -14,7 +14,7 @@ const config = {
     },
     output: {
         path: PATHS.dist,
-        filename: "[name].bundle.js"
+        filename: "[name].[contenthash].js"
     },
     devServer: {
         port: 3000
@@ -55,7 +55,7 @@ const config = {
             template: `${PATHS.src}/index.pug`
         }),
         new MiniCssExtractPlugin({
-            filename: '[name].css'
+            filename: '[name].[contenthash].css'
         }),
         new CopyWebpackPlugin({
             patterns:[{
