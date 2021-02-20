@@ -47,7 +47,7 @@
     box-shadow: 5px 5px 15px 1px rgba(13,17,33,.25), 0 2px 6px 1px rgba(27,36,72,.16);
     overflow: hidden;
     background-color: $color--4;
-    border-radius: $borderRadius--1;
+    border-radius: $borderRadius--medium;
     -webkit-mask-image: -webkit-radial-gradient(white, black);
 
     &:hover .Portfolio__img {
@@ -73,7 +73,7 @@
 }
 
 .Portfolio__descContainer {
-    padding: 0 $padding--1 $padding--1;
+    padding: 0 $padding--medium $padding--medium;
 
     & p {
         text-align: center;
@@ -91,7 +91,7 @@
     padding: 2px 8px 4px;
     color: $color--4;
     background-color: $color--3;
-    border-radius: $borderRadius--1;
+    border-radius: $borderRadius--medium;
 }
 
 @media (max-width: $maxWidth--tablet) {

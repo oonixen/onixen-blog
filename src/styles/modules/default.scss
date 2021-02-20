@@ -1,6 +1,5 @@
 @import "../config";
 
-html,
 body {
     background-color: $color--1;
     color: $color--2;
@@ -38,23 +37,4 @@ h3 {
 ul, ol {
     padding: 0;
     list-style-type: none;
-}
-
-.ContentSection {
-    margin: $padding--3 0;
-}
-
-.ContentPadding {
-    padding: 0 $padding--1;
-}
-
-@media (max-width: $maxWidth--tablet) {
-
-    .ContentPadding {
-        padding: 0 $padding--2;
-    }
-
-    .ContentSection {
-        margin: $padding--2 0;
-    }
 }

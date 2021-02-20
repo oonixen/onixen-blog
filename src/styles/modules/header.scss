@@ -11,13 +11,16 @@
 }
 
 .Header__div {
-    padding: $padding--1;
-    border-radius: $borderRadius--1;
+    padding: $padding--medium;
     background-color: $color--2;
 }
 
 .Header__h1 {
     margin-top: 0;
+}
+
+.Header__GitHubLogo {
+    background-color: $color--2;
 }
 
 @function box-shadow($stars) {
@@ -28,7 +31,7 @@
     @return unquote($bxshadow);
 }
 
-$bxshadow-large: box-shadow(300);
+$bxshadow-large: box-shadow(200);
 
 .stars.large {
     height: 3px;

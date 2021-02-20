@@ -1,0 +1,13 @@
+@import "../config";
+
+.ContentSection {
+  margin: $padding--big 0;
+}
+
+@media (max-width: $maxWidth--tablet) {
+
+  .ContentSection {
+    margin: $padding--small 0;
+  }
+
+}

@@ -1,0 +1,13 @@
+@import "../config";
+
+.ContentPadding {
+  padding: 0 $padding--medium;
+}
+
+@media (max-width: $maxWidth--tablet) {
+
+  .ContentPadding {
+    padding: 0 $padding--small;
+  }
+
+}

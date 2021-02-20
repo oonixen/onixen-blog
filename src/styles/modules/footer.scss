@@ -6,14 +6,14 @@
     color: $color--4;
     background-color: $color--2;
     margin-bottom: 0;
-    padding: $padding--2 $padding--1;
+    padding: $padding--small $padding--medium;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
 
 .Footer__block {
-    margin-left: $padding--2;
+    margin-left: $padding--small;
     display: flex;
     align-items: center;
 }
@@ -25,6 +25,6 @@
 
 @media (max-width: $maxWidth--phone) {
     .Footer__section {
-        padding: $padding--2 $padding--2;
+        padding: $padding--small $padding--small;
     }
 }
