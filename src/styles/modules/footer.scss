@@ -26,5 +26,11 @@
 @media (max-width: $maxWidth--phone) {
     .Footer__section {
         padding: $padding--small $padding--small;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Footer__block {
+        margin: 3px 0;
     }
 }

@@ -1,10 +1,10 @@
-- portfolioArray = [{name: "Polyana Delivery", desc: "Delivery food app", img:'project1img.png', tags:[
+- portfolioArray = [{name: "Polyana Delivery", desc: "Food delivery app", img:'project1img.png', tags:[
 - 'react', 'redux', 'scss'], src: 'https://polyana.delivery/'},
 - {name: "Weather App (pet project)",
 - desc: "6 days weather forecast app. Find out the weather of the capitals of the world", img:'project2img.png', tags:[
 - 'next.js', 'typescript', 'redux', 'scss'], src: 'https://weatherapp.onixen.ru/'}]
 
-section(class='ContentSection' id='Portfolio')
+section(class='ContentSection AppearanceEffect__BeginningState' id='Portfolio')
     h2 Portfolio
     div(class='Portfolio__container')
         div(class='Portfolio__secondaryContainer')
@@ -15,7 +15,8 @@ section(class='ContentSection' id='Portfolio')
                             a(class='Portfolio__link' href=`/#${port.name}`)= port.name
         div(class='Portfolio__mainContainer')
             each port in portfolioArray
-                    section(class='Portfolio__project' id=`${port.name}`)
+                    section(class='Portfolio__project')
+                        div(class='Portfolio__idMarginDiv' id=`${port.name}`)
                         a(href=`${port.src}` target="_blank")
                             div(class='Portfolio__imgSection')
                                 img(src=`/img/${port.img}` class='Portfolio__img')

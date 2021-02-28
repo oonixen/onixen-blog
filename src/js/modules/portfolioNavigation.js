@@ -13,8 +13,6 @@ const portfolioSectionArray = Array.from(document.getElementsByClassName(portfol
 })
 
 for (let item of linkArray) item.addEventListener('click', clickOnLink)
-document.addEventListener('scroll', onScroll)
-document.addEventListener('readystatechange', onScroll)
 
 function clickOnLink (e) {
 
@@ -31,7 +29,7 @@ function clickOnLink (e) {
     addActiveClass(index)
 }
 
-function onScroll () {
+export function showActiveLink () {
 
     const windowTopHeight = window.pageYOffset + 160
 

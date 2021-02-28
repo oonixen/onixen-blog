@@ -1,0 +1,20 @@
+.AppearanceEffect__BeginningState {
+    visibility: hidden;
+}
+
+.AppearanceEffect {
+    position: relative;
+    animation-name: animateAppearanceEffect;
+    animation-duration: 1s;
+}
+
+@keyframes animateAppearanceEffect {
+    from {
+        right: 100%;
+        opacity: 0;
+    }
+    to {
+        right: 0;
+        opacity: 1;
+    }
+}

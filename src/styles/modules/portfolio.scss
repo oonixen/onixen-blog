@@ -55,6 +55,11 @@
     }
 }
 
+.Portfolio__idMarginDiv {
+    position: relative;
+    top: -10px;
+}
+
 @mixin imgMixin() {
     width: 100%;
     height: 400px;
